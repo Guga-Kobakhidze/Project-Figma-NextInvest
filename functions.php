@@ -13,7 +13,6 @@ function get_the_title()
         'card5' => 'alis',
         'card6' => 'Oxas',
     ];
-
     return $cardTitles[$card];
 }
 
@@ -95,7 +94,6 @@ function get_card_rate()
     ];
     return $cardRate[$card];
 }
-
 
 // for header --> //
 

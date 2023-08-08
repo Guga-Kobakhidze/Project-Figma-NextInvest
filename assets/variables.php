@@ -38,7 +38,7 @@ $grid_cards = [
     ],
 ];
 
-function get_the_card()
+function get_the_cards()
 {
     global $grid_cards;
     for ($i = 0; $i < sizeof($grid_cards['title']); $i++) {
@@ -74,23 +74,6 @@ function get_the_card()
     }
     return $grid_cards;
 }
-
-// function get_the_hidden_content()
-// {
-//     global $grid_cards;
-//     for ($i = 0; $i < 1; $i++) {
-//         foreach ($grid_cards['hidden_title'][$i] as $title) {
-//             echo '<p class="card_paragraph">' . $title . '</p>';
-//         }
-//         echo '</div>
-//             <div class="hidden_card_paragraphs">';
-//         foreach ($grid_cards['hidden_value'][$i] as $value) {
-//             echo '<h4 class="hidden_paragraph">' . $value . '</h4>';
-//         }
-//     }
-//     return $grid_cards;
-// }
-
 
 $sectionContent1 = [
     'subtitle' => '$7M+ paid out to investors',

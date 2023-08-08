@@ -27,7 +27,7 @@
                 </p>
             </div>
             <div class="grid_content_cards">
-                <?php get_the_card(); ?>
+                <?php get_the_cards(); ?>
             </div>
             <div class="grid_cards_button">
                 <button class="btn" type="submit">View All Projects</button>

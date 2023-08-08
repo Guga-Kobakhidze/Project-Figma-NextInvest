@@ -7,12 +7,8 @@
         <div class="container">
             <div class="single_page_content">
                 <div class="single_page_description">
-                    <h2 class="main_title">
-                        <?php echo get_the_title(); ?>
-                    </h2>
-                    <p class="paragraph single_paragraph">
-                        <?php echo get_the_description(); ?>
-                    </p>
+                    <h2 class="main_title"><?php echo get_the_title(); ?></h2>
+                    <p class="paragraph single_paragraph"><?php echo get_the_description(); ?></p>
                     <div class="hidden_content single_content">
                         <div class="hidden_card_titles">
                             <?php foreach (get_card_titles() as $title) : ?>
