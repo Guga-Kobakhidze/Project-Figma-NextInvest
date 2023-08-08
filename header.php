@@ -1,4 +1,5 @@
 <?php include "functions.php" ?>
+<?php include "./assets/variables.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,13 +24,7 @@
                 </div>
                 <div class="menu_content">
                     <ul class="navigation">
-                        <li>
-                            <a class="link" href="#">Investment Opportunities </a><i class="bx bx-chevron-down arrow_down"></i>
-                        </li>
-                        <li>
-                            <a class="link" href="#">How it works </a><i class="bx bx-chevron-down arrow_down"></i>
-                        </li>
-                        <li><a class="link" href="#">About us</a></li>
+                        <?php get_header_menu(); ?>
                     </ul>
                     <div class="login_buttons">
                         <button class="btn btn2" type="submit">Login</button>

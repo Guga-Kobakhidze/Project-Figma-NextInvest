@@ -5,8 +5,8 @@
 <main class="main">
     <section class="single_section">
         <div class="container">
-            <div class="paid_section_content">
-                <div class="paid_section_description">
+            <div class="single_page_content">
+                <div class="single_page_description">
                     <h2 class="main_title">
                         <?php echo get_the_title(); ?>
                     </h2>
@@ -15,28 +15,27 @@
                     </p>
                     <div class="hidden_content single_content">
                         <div class="hidden_card_titles">
-                            <p class="card_paragraph">Security Type</p>
-                            <p class="card_paragraph">Investment Multiple</p>
-                            <p class="card_paragraph">Maturity</p>
-                            <p class="card_paragraph">Min. Investment</p>
+                            <?php foreach (get_card_titles() as $title) : ?>
+                                <p class="card_paragraph"><?php echo $title; ?></p>
+                            <?php endforeach; ?>
                         </div>
                         <div class="hidden_card_paragraphs">
-                            <h4 class="hidden_paragraph">Revenue Sharing Note</h4>
-                            <h4 class="hidden_paragraph">1.4x</h4>
-                            <h4 class="hidden_paragraph">48 Months</h4>
-                            <h4 class="hidden_paragraph">$100</h4>
+                            <?php foreach (get_card_values() as $value) : ?>
+                                <h4 class="hidden_paragraph"><?php echo $value; ?></h4>
+                            <?php endforeach; ?>
                         </div>
                         <div class="range_bar">
                             <div class="range_color_bar"></div>
                         </div>
-                        <p class="card_paragraph">
-                            <span>$574,920 </span>raised of $1,000,000
-                        </p>
-                        <!-- <button class="btn btn4" type="submit" data-title="Oxalis">View</button> -->
+                        <p class="card_paragraph"><?php echo get_card_rate(); ?></p>
                     </div>
                 </div>
                 <div class="single_image">
                     <img src="<?php echo get_image_url(); ?>" alt="cuate" />
+                    <div class="single_image_buttons">
+                        <a class="btn btn5" href="./index.php #grid_cards">Go Back</a>
+                        <a class="btn btn5" href="#">Reserve</a>
+                    </div>
                 </div>
             </div>
         </div>
