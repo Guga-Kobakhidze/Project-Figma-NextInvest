@@ -28,7 +28,7 @@ $grid_cards = [
         ['Security Type', 'Investment Multiple', 'Maturity', 'Min. Investment'], ['Security Type', 'Investment Multiple', 'Maturity', 'Min. Investment'],
     ],
     'hidden_value' => [
-        ['Revenue Sharing Note', ' 1.4x', '48 Months', '$100'], ['Revenue', ' 1.5x', '64 Months', '$200'],
+        ['Revenue Sharing', ' 1.4x', '48 Months', '$100'], ['Revenue', ' 1.5x', '64 Months', '$200'],
         ['Revenue sharing', ' 1x', '12 Months', '$300'], ['Revenue Type', ' 1.4x', '24 Months', '$500'],
         ['Revenue', ' 1.3x', '64 Months', '$250'], ['Revenue sharing', ' 1.8x', '12 Months', '$800'],
     ],

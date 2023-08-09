@@ -154,6 +154,36 @@ body {
   color: white;
 }
 
+.burger_navigation {
+  position: fixed;
+  left: -300px;
+  top: -33px;
+  padding: 120px 20px;
+  background: #33333386;
+  width: 270px;
+  height: 860px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.5s ease-in;
+}
+
+.hamburger_menu {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .burger_navigation {
+  left: 0;
+}
+
 /* home Section 1 */
 
 .home_section_1 {
@@ -291,7 +321,6 @@ body {
 
 .hidden_content {
   display: none;
-  flex-wrap: wrap;
   align-items: start;
   justify-content: space-between;
   padding: 24px 0;

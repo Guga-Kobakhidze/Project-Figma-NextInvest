@@ -12,19 +12,20 @@
                     <div class="hidden_content single_content">
                         <div class="hidden_card_titles">
                             <?php foreach (get_card_titles() as $title) : ?>
-                                <p class="card_paragraph"><?php echo $title; ?></p>
+                            <p class="card_paragraph"><?php echo $title; ?></p>
                             <?php endforeach; ?>
                         </div>
                         <div class="hidden_card_paragraphs">
                             <?php foreach (get_card_values() as $value) : ?>
-                                <h4 class="hidden_paragraph"><?php echo $value; ?></h4>
+                            <h4 class="hidden_paragraph"><?php echo $value; ?></h4>
                             <?php endforeach; ?>
                         </div>
-                        <div class="range_bar">
-                            <div class="range_color_bar"></div>
-                        </div>
-                        <p class="card_paragraph"><?php echo get_card_rate(); ?></p>
+
                     </div>
+                    <div class="range_bar">
+                        <div class="range_color_bar"></div>
+                    </div>
+                    <p class="card_paragraph"><?php echo get_card_rate(); ?></p>
                 </div>
                 <div class="single_image">
                     <img src="<?php echo get_image_url(); ?>" alt="cuate" />
